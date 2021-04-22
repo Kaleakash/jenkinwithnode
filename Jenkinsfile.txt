@@ -5,5 +5,11 @@
           filename "Dockerfile.txt"
         }
       }  
+stage("Test front end") {
+      agent {
+        dockerfile {
+          filename "Dockerfile.txt"
+        }
+      }
 }
 }
