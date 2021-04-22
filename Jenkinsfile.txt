@@ -1,9 +1,7 @@
 pipeline {
-	agent {
-		docker {
-			image  "node:alpine",
-			args  "-p 9999:9999"
-		}
+	docker {
+		image  "node:alpine",
+		args  "-p 9999:9999"
 	}
 	stages {
 		stage("build") {
